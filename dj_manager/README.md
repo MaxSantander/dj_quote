@@ -68,23 +68,43 @@ npm run preview
 
 ## Despliegue en Vercel
 
-1. Asegúrate de tener una cuenta en [Vercel](https://vercel.com)
+### Opción 1: Desde GitHub (Recomendado)
 
-2. Instala Vercel CLI (opcional):
+1. **Crear repositorio en GitHub:**
+   - Ve a [GitHub](https://github.com/new)
+   - Nombre del repositorio: `dj-quote-pro` (o el que prefieras)
+   - Elige si será público o privado
+   - No inicialices con README, .gitignore o licencia (ya los tenemos)
+   - Haz clic en "Create repository"
+
+2. **Conectar el repositorio local:**
+   ```bash
+   git remote add origin https://github.com/TU_USUARIO/dj-quote-pro.git
+   git push -u origin main
+   ```
+
+3. **Importar en Vercel:**
+   - Ve a [Vercel](https://vercel.com)
+   - Haz clic en "Add New Project"
+   - Selecciona el repositorio `dj-quote-pro` de GitHub
+   - Vercel detectará automáticamente que es un proyecto Vite
+   - Haz clic en "Deploy"
+
+### Opción 2: Desde Vercel CLI
+
+1. Instala Vercel CLI:
 ```bash
 npm i -g vercel
 ```
 
-3. Desde la raíz del proyecto, ejecuta:
+2. Desde la raíz del proyecto, ejecuta:
 ```bash
 vercel
 ```
 
-O conecta tu repositorio de GitHub/GitLab a Vercel desde el dashboard.
-
 ### Configuración de Vercel
 
-Vercel detectará automáticamente que es un proyecto Vite. No se requiere configuración adicional.
+Vercel detectará automáticamente que es un proyecto Vite. El archivo `vercel.json` ya está configurado.
 
 **Build Command**: `npm run build`  
 **Output Directory**: `dist`
