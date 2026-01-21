@@ -104,6 +104,7 @@ export const translations = {
       total: 'TOTAL',
       deposit: 'Anticipo requerido',
       cancellationPolicy: 'Política de Cancelación',
+      cancellationPolicyText: 'Cancelación gratuita hasta 30 días antes. 50% de reembolso hasta 14 días antes.',
       newQuote: 'Nueva Cotización',
       downloadPDF: 'Descargar PDF',
       viewSpotify: 'Ver playlist de Spotify'
@@ -129,7 +130,8 @@ export const translations = {
       lightingPro: 'Iluminación Pro (€)',
       wirelessMic: 'Micrófono Inalámbrico (€)',
       ceremony: 'Ceremonia/Cóctel (€)',
-      specialRequests: 'Solicitudes especiales'
+      specialRequests: 'Solicitudes especiales',
+      cancellationPolicyHint: 'Deja vacío para usar el texto por defecto traducido'
     },
     // Footer
     footer: {
@@ -235,6 +237,7 @@ export const translations = {
       total: 'TOTAL',
       deposit: 'Required Deposit',
       cancellationPolicy: 'Cancellation Policy',
+      cancellationPolicyText: 'Free cancellation up to 30 days before. 50% refund up to 14 days before.',
       newQuote: 'New Quote',
       downloadPDF: 'Download PDF',
       viewSpotify: 'View Spotify Playlist'
@@ -259,7 +262,8 @@ export const translations = {
       lightingPro: 'Pro Lighting (€)',
       wirelessMic: 'Wireless Microphone (€)',
       ceremony: 'Ceremony/Cocktail (€)',
-      specialRequests: 'Special Requests'
+      specialRequests: 'Special Requests',
+      cancellationPolicyHint: 'Leave empty to use default translated text'
     },
     footer: {
       copyright: '© 2026 DJ Quote Pro - Professional DJ Quotes'
@@ -364,6 +368,7 @@ export const translations = {
       total: 'GESAMT',
       deposit: 'Erforderliche Anzahlung',
       cancellationPolicy: 'Stornierungsrichtlinie',
+      cancellationPolicyText: 'Kostenlose Stornierung bis zu 30 Tage vorher. 50% Rückerstattung bis zu 14 Tage vorher.',
       newQuote: 'Neues Angebot',
       downloadPDF: 'PDF herunterladen',
       viewSpotify: 'Spotify-Playlist ansehen'
@@ -388,7 +393,8 @@ export const translations = {
       lightingPro: 'Pro-Beleuchtung (€)',
       wirelessMic: 'Funkmikrofon (€)',
       ceremony: 'Zeremonie/Cocktail (€)',
-      specialRequests: 'Besondere Anfragen'
+      specialRequests: 'Besondere Anfragen',
+      cancellationPolicyHint: 'Leer lassen, um den standardmäßigen übersetzten Text zu verwenden'
     },
     footer: {
       copyright: '© 2026 DJ Quote Pro - Professionelle DJ-Angebote'

@@ -12,7 +12,7 @@ export const defaultConfig = {
   },
   taxRate: 19,
   deposit: 30,
-  cancellationPolicy: 'Cancelación gratuita hasta 30 días antes. 50% de reembolso hasta 14 días antes.'
+  cancellationPolicy: '' // Se usa traducción dinámica según idioma
 };
 
 export const eventTypes = [

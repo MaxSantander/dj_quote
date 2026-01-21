@@ -164,11 +164,15 @@ function AdminDashboard({ config, onConfigSave, quotes, setQuotes, onLogout }) {
             <div>
               <label className="block mb-2 text-sm font-semibold">{t('admin.cancellationPolicy')}</label>
               <textarea
-                value={editConfig.cancellationPolicy}
+                value={editConfig.cancellationPolicy || ''}
                 onChange={(e) => setEditConfig({...editConfig, cancellationPolicy: e.target.value})}
                 rows="3"
+                placeholder={t('quote.cancellationPolicyText')}
                 className="w-full px-4 py-2 bg-gray-900 border border-purple-500 rounded focus:outline-none focus:border-purple-400"
               ></textarea>
+              <p className="text-xs text-gray-400 mt-1">
+                {t('admin.cancellationPolicyHint')}
+              </p>
             </div>
 
             <button

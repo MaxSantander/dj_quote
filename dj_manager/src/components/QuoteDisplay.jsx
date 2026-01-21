@@ -89,7 +89,9 @@ function QuoteDisplay({ quote, config, onBack }) {
         {/* Terms */}
         <div className="bg-gray-900 rounded-lg p-6 mb-6">
           <h3 className="text-xl font-semibold mb-3 text-purple-300">{t('quote.cancellationPolicy')}</h3>
-          <p className="text-sm text-gray-300">{config.cancellationPolicy}</p>
+          <p className="text-sm text-gray-300">
+            {config.cancellationPolicy || t('quote.cancellationPolicyText')}
+          </p>
         </div>
 
         {/* Actions */}

@@ -165,7 +165,8 @@ export const generateQuotePDF = (quote, config) => {
 
   doc.setFontSize(9);
   doc.setFont('helvetica', 'normal');
-  const policyLines = doc.splitTextToSize(config.cancellationPolicy, pageWidth - 2 * margin);
+  const policyText = config.cancellationPolicy || t('quote.cancellationPolicyText');
+  const policyLines = doc.splitTextToSize(policyText, pageWidth - 2 * margin);
   doc.text(policyLines, margin, yPos);
   yPos += policyLines.length * 5 + 10;
 
