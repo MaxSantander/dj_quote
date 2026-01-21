@@ -4,6 +4,5 @@
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": "vite",
-  "rootDirectory": "dj_manager"
+  "framework": "vite"
 }
