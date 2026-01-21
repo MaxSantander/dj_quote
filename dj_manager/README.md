@@ -87,7 +87,11 @@ npm run preview
    - Ve a [Vercel](https://vercel.com)
    - Haz clic en "Add New Project"
    - Selecciona el repositorio `dj-quote-pro` de GitHub
-   - Vercel detectará automáticamente que es un proyecto Vite
+   - **IMPORTANTE - Configuración del proyecto:**
+     - **Root Directory**: Debe estar **vacío** o ser `./` (raíz del repositorio)
+     - **Build Command**: `npm run build` (toggle activado)
+     - **Output Directory**: `dist` (toggle activado)
+     - **Install Command**: `npm install` (toggle activado)
    - Haz clic en "Deploy"
 
 ### Opción 2: Desde Vercel CLI
